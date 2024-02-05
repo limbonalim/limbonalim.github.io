@@ -596,9 +596,16 @@ body {
   padding: 10px;
   z-index: 2;
 }
+@media screen and (max-width: 600px) {
+  .modal {
+    min-width: 85vw;
+    top: 5%;
+  }
+}
 
 .modal-layer {
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   width: 100vmax;
   min-height: 100%;
   position: fixed;
