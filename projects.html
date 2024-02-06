@@ -22,13 +22,13 @@
             <nav class="navigation" id="navigation">
                 <ul class="navigation__list">
                     <li class="navigation__item">
-                        <a class="navigation__link active" href="#">Home</a>
+                        <a class="navigation__link" href="./index.html">Home</a>
                     </li>
                     <li class="navigation__item">
-                        <a class="navigation__link " href="./about.html">About</a>
+                        <a class="navigation__link" href="./about.html">About</a>
                     </li>
                     <li class="navigation__item">
-                        <a class="navigation__link " href="./projects.html">Projects</a>
+                        <a class="navigation__link active" href="./projects.html">Projects</a>
                     </li>
                     <li class="navigation__item">
                         <button class="navigation__button" id="toggle-white"></button>
@@ -37,7 +37,8 @@
             </nav>
             <ul class="socialLink header__social" id="social">
                 <li class="socialLink__item">
-                    <a class="socialLink__link" href="https://github.com/limbonalim" target="_blank" aria-label="GitHub">
+                    <a class="socialLink__link" href="https://github.com/limbonalim" target="_blank"
+                        aria-label="GitHub">
                         <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"
                             class="socialLink__icon_Github">
                             <path
@@ -57,8 +58,8 @@
                     </a>
                 </li>
                 <li class="socialLink__item">
-                    <a class="socialLink__link" href="https://www.linkedin.com/in/petr-zhuravlev-a60559283/" target="_blank"
-                        aria-label="Linkedin">
+                    <a class="socialLink__link" href="https://www.linkedin.com/in/petr-zhuravlev-a60559283/"
+                        target="_blank" aria-label="Linkedin">
                         <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"
                             class="socialLink__icon_Linkedin">
                             <path
@@ -83,98 +84,7 @@
     </header>
 
     <main class="container container-main">
-        <div class="aboutBanner">
-            <div class="aboutBanner__info">
-                <h1 class="title">Peter is a <span class="title__inner">web designer</span> and <span
-                        class="title__inner">front-end developer</span></h1>
-                <p class="title__slogan">He crafts responsive websites where technologies meet creativity</p>
-            </div>
-            <div class="aboutBanner__photo">
-            </div>
-        </div>
-        <div>
-            <h2 class="title_block-name">Demo cards</h2>
-            <div class="cardContainer">
-                <div class="card">
-                    <div class="card__image">
-                        <img src="uploads/image-1.jpg" alt="some image">
-                    </div>
-                    <h3 class="card__title">
-                        Some Title
-                    </h3>
 
-                    <p class="card__description">
-                        purpose-built to solve the use case of data fetching and caching, supplying a compact, but
-                        powerful
-                        toolset to define an API interface layer for your app. It is intended to simplify common cases
-                        for
-                        loading data in a web application, eliminating the need to hand-write data fetching & caching
-                        logic
-                        yourself.
-                        purpose-built to solve the use case of data fetching and caching, supplying a compact, but
-                        powerful
-                        toolset to define an API interface layer for your app. It is intended to simplify common cases
-                        for
-                        loading data in a web application, eliminating the need to hand-write data fetching & caching
-                        logic
-                        yourself.
-                    </p>
-                    <div class="card__buttons">
-                        <button class="btn btn_card-gray_play" id="showModal">Show Modal</button>
-                        <button class="btn btn_card-primary_play">click</button>
-                    </div>
-
-                </div>
-
-                <div class="card">
-                    <div class="card__image">
-                        <img src="uploads/image-1.jpg" alt="some image">
-                    </div>
-                    <h3 class="card__title">
-                        Some Title
-                    </h3>
-
-                    <p class="card__description">
-                        purpose-built to solve the use case of data fetching and caching, supplying a compact, but
-                        powerful
-                        toolset to define an API interface layer for your app. It is intended to simplify common cases
-                        for
-                        loading data in a web application, eliminating the need to hand-write data fetching & caching
-                        logic
-                        yourself.
-                    </p>
-                    <div class="card__buttons">
-                        <button class="btn btn_card-primary">click</button>
-                        <button class="btn btn_card-gray">click</button>
-                    </div>
-
-                </div>
-
-                <div class="card">
-                    <div class="card__image">
-                        <img src="uploads/image-1.jpg" alt="some image">
-                    </div>
-                    <h3 class="card__title">
-                        Some Title
-                    </h3>
-
-                    <p class="card__description">
-                        purpose-built to solve the use case of data fetching and caching, supplying a compact, but
-                        powerful
-                        toolset to define an API interface layer for your app. It is intended to simplify common cases
-                        for
-                        loading data in a web application, eliminating the need to hand-write data fetching & caching
-                        logic
-                        yourself.
-                    </p>
-                    <div class="card__buttons">
-                        <button class="btn btn_card-primary">click</button>
-                        <button class="btn btn_card-gray">click</button>
-                    </div>
-
-                </div>
-            </div>
-        </div>
     </main>
 
     <footer class="footer">
@@ -243,20 +153,8 @@
         </div>
     </footer>
 
-    <div class="modal" id="modal" style="display: none;">
-        <h3 class="modal__title">Modal Title</h3>
-        <div class="modal__body">
-            <p class="modal__description">purpose-built to solve the use case of data fetching and caching, supplying a
-                compact, but powerful toolset to define an API interface layer for your app. It is intended to simplify
-                common cases for loading data in a web application, eliminating the need to hand-write data fetching &
-                caching logic yourself.
-            </p>
-        </div>
-    </div>
-
     <script src="js/toggle.js"></script>
     <script src="js/theme.js"></script>
-    <script src="js/modal.js"></script>
 </body>
 
 </html>

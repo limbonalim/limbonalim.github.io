@@ -286,12 +286,16 @@ body {
 :root {
   --nav-color: #ABB2BF;
   --nav-color-active: #fff;
+  --nav-color-hover: #c3c8d2;
+  --nav-color-active-hover: #fff;
   --icon-toggle: url(../images/white-mode.svg) no-repeat center / 100%;
 }
 
 :root[theme=white] {
   --nav-color:#282C33;
   --nav-color-active: #21427a;
+  --nav-color-hover: #C778DD;
+  --nav-color-active-hover: #21427a;
   --icon-toggle: url(../images/dark-mode.svg) no-repeat center / 100%;
 }
 
@@ -324,10 +328,10 @@ body {
   color: #daa0ea;
 }
 .navigation__item:hover .navigation__link {
-  color: #c3c8d2;
+  color: var(--nav-color-hover);
 }
 .navigation__item:hover .active {
-  color: #FFFFFF;
+  color: var(--nav-color-active-hover);
 }
 .navigation__item:last-child:before {
   content: none;
