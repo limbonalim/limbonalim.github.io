@@ -21,10 +21,6 @@ prev[0].addEventListener('click', () => {
 next[0].addEventListener('click', () => {
     clearInterval(time);
     clearTimeout(timeOut);
-    slideIndex = slideIndex + 1;
-    if (slideIndex === -1) {
-        slideIndex = slides.length - 1;
-    }
     showSlides();
     timeOut = setTimeout(() => time = setInterval(showSlides, 3000), 6000);
 });
