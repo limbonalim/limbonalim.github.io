@@ -18,6 +18,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.6;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -27,6 +28,13 @@ body {
 }
 .container-main {
   padding: 0 35px;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 100vw;
 }
 
 :root {
@@ -155,6 +163,8 @@ body {
   gap: 20px;
   padding: 32px 0 0;
   margin-bottom: 50px;
+  width: 100vw;
+  flex-shrink: 0;
 }
 @media screen and (max-width: 1130px) {
   .header {
@@ -208,6 +218,7 @@ body {
   margin: 500px 0 0;
   border-top: 1px solid #ABB2BF;
   padding: 32px 0;
+  flex-shrink: 0;
 }
 .footer__top {
   display: flex;
@@ -252,6 +263,10 @@ body {
 }
 .footer__bottom p {
   text-align: center;
+}
+
+main {
+  flex-grow: 1;
 }
 
 /*Components*/
@@ -618,7 +633,6 @@ body {
 }
 
 .carusel {
-  max-width: 100vw;
   position: relative;
   margin: auto;
   overflow: hidden;
@@ -725,6 +739,47 @@ body {
   to {
     opacity: 1;
   }
+}
+.mainBanner {
+  height: 100vh;
+  scrollbar-width: none;
+  overflow-y: scroll;
+  scroll-timeline-name: --scroll-timeline;
+  scroll-timeline-axis: y;
+  position: relative;
+}
+.mainBanner__bg {
+  animation-duration: 2s;
+  height: 100%;
+  animation-name: moveBg;
+  animation-timeline: --scroll-timeline;
+}
+.mainBanner__info_OnImage {
+  position: absolute;
+  top: 10px;
+  max-width: 1024px;
+}
+
+@keyframes moveBg {
+  from {
+    background: url(../uploads/neon-city.webp) 0px 1px;
+  }
+  to {
+    background: url(../uploads/neon-city.webp) no-repeat 0px -1313px;
+  }
+}
+.textBlock {
+  margin: 50px 0;
+}
+.textBlock__image_top {
+  float: left;
+  max-width: 300px;
+  margin: 20px;
+}
+.textBlock__image_bottom {
+  float: right;
+  max-width: 300px;
+  margin: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
